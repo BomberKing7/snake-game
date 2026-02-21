@@ -56,6 +56,9 @@ int main()
     Event e;
     while (window.pollEvent(e))
     {
+      if(e.type==sf::Event::Closed){
+            window.close();
+        }
     }
     if (Keyboard::isKeyPressed(Keyboard::O))
     {
